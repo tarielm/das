@@ -16,7 +16,6 @@ a{
   width: 272px;
   height: 77.25px;
   background: linear-gradient(148.24deg, #032658 1.03%, #1B6CE1 60.39%);
-  box-shadow: 0 97px 90px rgba(7, 0, 59, 0.12);
   font-family: 'Work Sans',sans-serif;
   font-style: normal;
   text-align: center;
@@ -29,5 +28,7 @@ a{
   transition: .4s;
   &:hover{
     transform: scale(1.1);
+    background: linear-gradient(148.24deg, #032658 1.03%, #1B6CE1 60.39%);
+    box-shadow: 0 97px 90px rgba(7, 0, 59, 0.12);
   }
 }

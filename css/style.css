@@ -42,10 +42,12 @@ a {
 #hero {
   background: url("../img/fon.png") no-repeat center/cover;
   min-height: 100vh;
+  width: 95rem;
+  height: 200px;
 }
 #hero .hero-general__img {
   position: absolute;
-  left: 46rem;
+  right: 0;
   bottom: 19rem;
   z-index: 3;
 }
@@ -79,7 +81,6 @@ a {
   width: 272px;
   height: 77.25px;
   background: linear-gradient(148.24deg, #032658 1.03%, #1B6CE1 60.39%);
-  box-shadow: 0 97px 90px rgba(7, 0, 59, 0.12);
   font-family: "Work Sans", sans-serif;
   font-style: normal;
   text-align: center;
@@ -93,6 +94,8 @@ a {
 }
 #hero .hero-general__tittle__btn button:hover {
   transform: scale(1.1);
+  background: linear-gradient(148.24deg, #032658 1.03%, #1B6CE1 60.39%);
+  box-shadow: 0 97px 90px rgba(7, 0, 59, 0.12);
 }
 #hero .hero-general__vector {
   padding-left: 10rem;
@@ -100,7 +103,7 @@ a {
 #hero .hero-general__vector div {
   position: absolute;
   z-index: 5;
-  right: 1px;
+  right: 0;
   top: 29rem;
 }
 
@@ -143,6 +146,7 @@ a {
 #our .our-general__block__part {
   padding: 50px 20px;
   transition: 0.4s;
+  border: 2px solid #FFFFFF;
 }
 #our .our-general__block__part:hover {
   transform: translateY(-15px);
@@ -257,8 +261,9 @@ a {
 #blog .blog-general__img {
   position: absolute;
   left: 53rem;
-  top: 70rem;
+  top: 67rem;
   z-index: 1;
+  right: 0;
 }
 
 #features {
@@ -266,7 +271,9 @@ a {
   margin-top: 100px;
 }
 #features .features-general {
-  padding: 100px 0;
+  padding: 100px 0 300px 0;
+  display: flex;
+  justify-content: space-between;
 }
 #features .features-general__our__part {
   display: flex;
@@ -297,11 +304,12 @@ a {
   opacity: 0.7;
   width: 750px;
 }
-#features .features-general__our__icons {
+#features .features-general__icons {
   display: flex;
   align-items: center;
+  margin-bottom: 80px;
 }
-#features .features-general__our__icons h3 {
+#features .features-general__icons h3 {
   font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -309,6 +317,674 @@ a {
   line-height: 24px;
   text-decoration-line: underline;
   color: #FFFFFF;
+}
+#features .features-general__icons span {
+  margin-left: 10px;
+  color: #FFFFFF;
+  font-size: 23px;
+}
+#features .features-general__img {
+  position: absolute;
+  right: 0;
+  top: 102rem;
+}
+
+#custom .custom-general {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 145rem;
+}
+#custom .custom-general__fintech {
+  padding: 80px 40px;
+  width: 310px;
+  height: 280px;
+  background: white;
+  position: relative;
+  margin-right: 50px;
+  transition: 0.4s;
+}
+#custom .custom-general__fintech:hover {
+  transform: scale(1.05);
+  background: #FDFDFF;
+  box-shadow: 0 97px 90px rgba(7, 0, 59, 0.12);
+}
+#custom .custom-general__fintech__icons {
+  padding: 12px 20px;
+  border-radius: 50%;
+  font-size: 40px;
+  background: linear-gradient(180deg, rgba(254, 35, 199, 0.3) 0%, rgba(255, 185, 83, 0.3) 100%);
+  color: #FE56C6;
+  margin-bottom: 50px;
+}
+#custom .custom-general__fintech__h1 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #292525;
+  width: 313px;
+  margin-top: 50px;
+}
+#custom .custom-general__fintech p {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #787878;
+  opacity: 0.7;
+  width: 294px;
+  margin-top: 20px;
+}
+#custom .custom-general__fintech__block {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 150px;
+}
+#custom .custom-general__fintech__block h1 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #1B6CE1;
+}
+#custom .custom-general__fintech__block__icon {
+  color: #1B6CE1;
+  font-size: 23px;
+  margin-left: 20px;
+}
+#custom .custom-general__fintech img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#img {
+  padding-top: 280px;
+}
+#img .img-general {
+  padding: 0;
+}
+#img .img-general img {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+#use {
+  padding: 200px 0;
+}
+#use .use-general {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+#use .use-general__img {
+  border: 1px solid #B3B3B3;
+  margin-top: 130px;
+  background: #FDFDFF;
+  transition: 0.4s;
+}
+#use .use-general__img:hover {
+  transform: scale(1);
+  box-shadow: 0 97px 90px rgba(7, 0, 59, 0.12);
+}
+#use .use-general__img__tochka {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 10px;
+}
+#use .use-general__img__tochka div {
+  width: 9.82px;
+  height: 9.82px;
+  background: #C4C4C4;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+#use .use-general__img__images {
+  padding: 40px 30px;
+}
+#use .use-general__img__images div {
+  margin-bottom: 10px;
+}
+#use .use-general__tittle {
+  width: 500px;
+  height: 400px;
+  margin-left: 49px;
+}
+#use .use-general__tittle__h1 {
+  display: flex;
+  align-items: center;
+}
+#use .use-general__tittle__h1 div {
+  width: 56px;
+  height: 3px;
+  background: #1B6CE1;
+}
+#use .use-general__tittle__h1 h1 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 43px;
+  line-height: 70px;
+  color: #373737;
+}
+#use .use-general__tittle p {
+  width: 580px;
+  height: 346px;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 44px;
+  text-align: right;
+  color: #787878;
+  opacity: 0.7;
+}
+
+#services {
+  background: linear-gradient(112.49deg, #01204C 2.86%, #1A6CE0 87.34%);
+  position: relative;
+}
+#services .services-general {
+  padding: 100px 0 350px 0;
+}
+#services .services-general__our {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#services .services-general__our div {
+  width: 56px;
+  height: 3px;
+  background: #FEFEFE;
+}
+#services .services-general__our h1 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 70px;
+  color: #FFFFFF;
+}
+#services .services-general p {
+  width: 814px;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+#services .services-general__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+#hover .hover-general {
+  position: absolute;
+  top: 252rem;
+  z-index: 4;
+}
+#hover .hover-general__block {
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#hover .hover-general__block__part {
+  width: 260px;
+  height: 250px;
+  padding: 50px 20px;
+  transition: 0.4s;
+  border: 2px solid #FFFFFF;
+  background: white;
+  margin-right: 20px;
+}
+#hover .hover-general__block__part:hover {
+  transform: translateY(-15px);
+  background: #FDFDFF;
+  border: 2px solid #33AB51;
+  box-shadow: 0 97px 90px rgba(7, 0, 59, 0.12);
+}
+#hover .hover-general__block__part:hover span {
+  color: #33AB51;
+}
+#hover .hover-general__block__part span {
+  color: #1B6CE1;
+  font-size: 28px;
+}
+#hover .hover-general__block__part h1 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 32px;
+  font-feature-settings: "liga" off;
+  color: #373737;
+  margin-top: 20px;
+}
+#hover .hover-general__block__part p {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  font-feature-settings: "liga" off;
+  color: #898989;
+  width: 286px;
+}
+#hover .hover-general__block__part div {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#hover .hover-general__block__part div h2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 16px;
+  font-feature-settings: "liga" off;
+  color: #1B6CE1;
+}
+#hover .hover-general__block__part div span {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #1B6CE1;
+}
+
+#users {
+  margin-top: 400px;
+}
+#users .users-general {
+  display: flex;
+  justify-content: space-between;
+}
+#users .users-general__img {
+  position: relative;
+  width: 550px;
+  height: 580px;
+  background: linear-gradient(180deg, rgba(27, 108, 225, 0) 0%, #1B6CE1 100%);
+}
+#users .users-general__img img {
+  position: absolute;
+  width: 550px;
+  height: 580px;
+  z-index: -2;
+}
+#users .users-general__block {
+  width: 504px;
+  height: 300px;
+}
+#users .users-general__block__tittle {
+  display: flex;
+  margin-bottom: 50px;
+}
+#users .users-general__block__tittle div {
+  width: 56px;
+  height: 3px;
+  background: #1B6CE1;
+  margin: 40px 20px 0 0;
+}
+#users .users-general__block__tittle h1 {
+  width: 684px;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 70px;
+  color: #373737;
+}
+#users .users-general__block__numbers__block1 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 70px;
+}
+#users .users-general__block__numbers__block1__part {
+  border-left: 1px solid #1B6CE1;
+  padding: 10px 10px;
+}
+#users .users-general__block__numbers__block1__part h1 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 46px;
+  font-feature-settings: "liga" off;
+  color: #1B6CE1;
+}
+#users .users-general__block__numbers__block1__part p {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  font-feature-settings: "liga" off;
+  color: #1B6CE1;
+}
+
+#recent {
+  margin-top: 300px;
+}
+#recent .recent-general__width {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#recent .recent-general__width__part {
+  width: 56px;
+  height: 3px;
+  background: #1B6CE1;
+}
+#recent .recent-general__width h1 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 70px;
+  color: #373737;
+  margin-left: 10px;
+}
+#recent .recent-general img {
+  margin-top: 70px;
+  position: absolute;
+  right: 0;
+  z-index: -5;
+  width: 95rem;
+  height: 30rem;
+  background: linear-gradient(180deg, rgba(27, 108, 225, 0) 0%, #1B6CE1 100%);
+}
+#recent .recent-general__block {
+  margin-top: 21.5rem;
+  margin-left: 45rem;
+  padding: 100px 50px;
+  background: #F8F8F9;
+  width: 400px;
+  height: 300px;
+}
+#recent .recent-general__block h1 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 54px;
+  font-feature-settings: "liga" off;
+  color: #373737;
+}
+#recent .recent-general__block p {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  font-feature-settings: "liga" off;
+  color: #898989;
+  width: 370px;
+  margin-bottom: 30px;
+}
+#recent .recent-general__block h2 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #373737;
+  cursor: pointer;
+  transition: 0.4s;
+}
+#recent .recent-general__block h2:hover {
+  text-decoration-line: underline;
+  font-feature-settings: "liga" off;
+  color: #1B6CE1;
+}
+
+#ready {
+  margin-top: 150px;
+  background: url("../img/fon5.png") no-repeat center/cover;
+  min-height: 100vh;
+  height: 350px;
+}
+#ready .ready-general {
+  padding: 100px 0;
+}
+#ready .ready-general__tittle {
+  display: flex;
+  align-items: center;
+}
+#ready .ready-general__tittle div {
+  width: 56px;
+  height: 3px;
+  background: #FFFFFF;
+}
+#ready .ready-general__tittle h1 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 70px;
+  color: #FFFFFF;
+}
+#ready .ready-general__block {
+  width: 760px;
+  height: 494.94px;
+  background: #FDFDFF;
+  margin-top: 55px;
+  border: 1px solid #B3B3B3;
+  transition: 0.4s;
+}
+#ready .ready-general__block:hover {
+  transform: scale(1.1);
+  border: 1px solid #B3B3B3;
+  box-shadow: 0 97px 90px rgba(7, 0, 59, 0.12);
+}
+#ready .ready-general__block__tochka {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 10px;
+}
+#ready .ready-general__block__tochka div {
+  width: 9.82px;
+  height: 9.82px;
+  background: #C4C4C4;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+#ready .ready-general__block__input {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+}
+#ready .ready-general__block__input input {
+  width: 534px;
+  height: 51px;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  color: #A1A1A1;
+  opacity: 0.7;
+  margin-bottom: 30px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #A1A1A1;
+}
+#ready .ready-general__block__input button {
+  width: 272px;
+  height: 77.25px;
+  background: linear-gradient(148.24deg, #032658 1.03%, #1B6CE1 60.39%);
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 88px;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+#ready .ready-general__block__input button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(148.24deg, #032658 1.03%, #1B6CE1 60.39%);
+  box-shadow: 0 97px 90px rgba(7, 0, 59, 0.12);
+}
+
+#here {
+  margin-top: 150px;
+}
+#here .here-general {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#here .here-general__call {
+  background: #F8F8F9;
+  padding: 20px 50px 20px 20px;
+}
+#here .here-general__call span {
+  font-size: 25px;
+  color: #1B6CE1;
+  margin-bottom: 10px;
+}
+#here .here-general__call h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  font-feature-settings: "liga" off;
+  color: #1B6CE1;
+  margin: 20px 0 10px 0;
+}
+#here .here-general__call p {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  font-feature-settings: "liga" off;
+  color: #1B6CE1;
+}
+
+#footer {
+  margin-top: 100px;
+  background: linear-gradient(112.49deg, #01204C 2.86%, #1A6CE0 87.34%);
+  padding: 100px 0;
+}
+#footer .footer-general {
+  padding: 30px 0;
+  display: flex;
+}
+#footer .footer-general__logo p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  width: 391.98px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  margin-top: 30px;
+}
+#footer .footer-general__work {
+  margin-left: 39px;
+}
+#footer .footer-general__work__p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+#footer .footer-general__work__p2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+  margin-bottom: 20px;
+}
+#footer .footer-general__services {
+  margin-left: 39px;
+}
+#footer .footer-general__services p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+  margin-bottom: 26px;
+}
+#footer .footer-general__business {
+  margin-left: 39px;
+}
+#footer .footer-general__business__p1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+#footer .footer-general__business__p2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+  margin-bottom: 20px;
+}
+#footer .footer-general__language {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#footer .footer-general__language select {
+  margin-left: 39px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  background: none;
+  border: 2px solid #317ef5;
+  outline: none;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+#footer .footer-general__language select option {
+  color: #1B6CE1;
+}
+#footer .footer-general__language div {
+  color: #FEFEFE;
+  font-size: 25px;
+  margin-left: 30px;
+  margin-top: 250px;
+}
+#footer .footer-general__language div span {
+  padding-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
